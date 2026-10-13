@@ -1,0 +1,25 @@
+CALCULADORA DE ZAPATAS PARA STREAMLIT
+
+Archivos:
+- app.py: interfaz web Streamlit.
+- requirements.txt: dependencia necesaria para el despliegue.
+
+PRUEBA LOCAL:
+1. Instala Python si no está instalado.
+2. Abre una terminal o Anaconda Prompt en esta carpeta.
+3. Ejecuta: pip install -r requirements.txt
+4. Ejecuta: streamlit run app.py
+
+PUBLICACIÓN:
+Sube app.py y requirements.txt a un repositorio de GitHub.
+En Streamlit Community Cloud, crea una app nueva y selecciona:
+- repositorio: el que acabas de crear
+- rama: normalmente main
+- archivo principal: app.py
+
+NOTA TÉCNICA:
+Se conserva el algoritmo simplificado del archivo original. En el código original,
+la carga total se calcula como número de columnas × (carga muerta + carga viva);
+por eso esta interfaz rotula ambas cargas como valores POR COLUMNA. Si tus cargas
+de entrada son totales para todas las columnas, el cálculo debe ajustarse antes de
+utilizarlo. Los resultados son preliminares y requieren validación estructural.
